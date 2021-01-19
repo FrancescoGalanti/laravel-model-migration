@@ -16,7 +16,7 @@ class CreateBikesTable extends Migration
         Schema::create('bikes', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('model');
-            $table->string('description');
+            $table->longText('description');
             $table->smallInteger('power');
             $table->timestamps();
         });
