@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'controll@index')->name('homepage');
 Route::get('/new-car', 'Carcontroller@store')->name('car');
+Route::get('/bikes', 'BikeController@tool');
