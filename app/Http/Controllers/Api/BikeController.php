@@ -1,22 +1,18 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Tool;
 
 class BikeController extends Controller
 {
     public function tool()
-      
+    
     {
-     
+        $Bikes = Tool::all();
 
-       $bikes = Tool::all();
-      
-      return response()->json($bikes);
-
-      /* return view('tools', compact('bikes'));  */
-
+        return response()->json($Bikes);
     }
 }
