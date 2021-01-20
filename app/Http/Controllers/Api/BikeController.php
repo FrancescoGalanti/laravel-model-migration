@@ -8,7 +8,7 @@ use App\Tool;
 
 class BikeController extends Controller
 {
-    public function tool()
+    public function index()
     
     {
         $Bikes = Tool::all();
