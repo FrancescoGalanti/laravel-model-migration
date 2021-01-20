@@ -21,5 +21,18 @@
          @endforeach
        </ul>
     </div>
+
+    <div id="app">
+       <ul>
+         <h1>List</h1>
+         <li v-for="element in list">
+            <p>@{{element.model}}</p>
+            <p>@{{element.weight}}</p>
+            <p>@{{element.description}}</p>
+            <p>@{{element.power}}</p>
+
+         </li>
+       </ul>
+    </div>
   </main>
 @endsection
