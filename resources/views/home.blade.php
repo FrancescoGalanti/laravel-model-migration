@@ -2,7 +2,7 @@
 
 @section('content')
   <main>
-  <div>
+   <div>
        <ul>
          @foreach($cars as $item)
           <li>
