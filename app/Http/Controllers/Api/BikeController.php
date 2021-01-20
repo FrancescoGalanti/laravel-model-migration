@@ -11,8 +11,8 @@ class BikeController extends Controller
     public function index()
     
     {
-        $Bikes = Tool::all();
+        $bikes = Tool::all();
 
-        return response()->json($Bikes);
+        return response()->json($bikes);
     }
 }
